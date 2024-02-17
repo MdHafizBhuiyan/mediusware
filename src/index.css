@@ -1,1 +1,73 @@
 
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10;
+  padding: 0;
+  background-color: #d89dca;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+  width: 30%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #46139f;
+  color: #fff;
+  border: none;
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #5f1caa;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #8663c2;
+  color: #fff;
+}
+
+/* Form and Table responsiveness */
+@media (max-width: 600px) {
+  form, table {
+    width: 50%;
+    margin: 0;
+  }
+}
